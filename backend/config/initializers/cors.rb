@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ENV["FRONT_URL"]
+    origins ENV["FRONT_URL"], 'https://dashboard.heroku.com/apps/vercel-heroku-sample'
 
     resource "*",
       headers: :any,
