@@ -8,6 +8,7 @@ const App = () => {
   const [name, setName] = useState("");
   console.log(process.env.REACT_APP_API_URL);
   const API_URL = `${process.env.REACT_APP_API_URL}/tasks`;
+  console.log(API_URL);
 
   // useCallbackでfetchTasksをメモ化
   const fetchTasks = useCallback(async () => {
