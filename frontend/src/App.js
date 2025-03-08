@@ -52,7 +52,7 @@ const App = () => {
           onChange={(e) => setName(e.target.value)}
         />
         <button className='app-button' onClick={createTask}>
-          タスクを作成s
+          タスクを作成
         </button>
       </div>
       <div>
